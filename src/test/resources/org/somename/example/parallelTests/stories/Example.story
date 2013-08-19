@@ -9,11 +9,11 @@ Scenario: Checking applications with an examples table
 Given an application has an ID of <id>
 When I check its state
 Then the application should be showing as <normalstate>
-And the default action should be <default>
+And the default action should be <defaultstate>
 
 Examples:
 
-name       | id    | normalstate | default
+name       | id    | normalstate | defaultstate
 nucleotide | 2     | STOPPED     | STOPPED
 groundmass | 12    | STOPPED     | AUTOMATIC
 flexuously | 20    | STOPPED     | ONDEMAND
